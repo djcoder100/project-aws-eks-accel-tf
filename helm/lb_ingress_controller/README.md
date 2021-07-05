@@ -46,7 +46,7 @@ Step4: Create an ECR repo for LB ingress controller if you don't have one
               
 Step5: After the build completes, tag your image so, you can push the image to this repository:
         
-        $ docker tag amazon/aws-load-balancer-controller:v2.1.3 <accountid>.dkr.ecr.eu-west-1.amazonaws.com/amazon/aws-load-balancer-controller:v2.1.3
+        $ docker tag 602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon/aws-load-balancer-controller:v2.1.3 <accountid>.dkr.ecr.eu-west-1.amazonaws.com/amazon/aws-load-balancer-controller:v2.1.3
         
 Step6: Run the following command to push this image to your newly created AWS repository:
         

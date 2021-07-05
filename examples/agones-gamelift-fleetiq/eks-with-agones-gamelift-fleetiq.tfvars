@@ -26,7 +26,7 @@ org               = "aws"     # Organization Name. Used to tag resources
 tenant            = "gaming"  # AWS account name or unique id for tenant
 environment       = "preprod" # Environment area eg., preprod or prod
 zone              = "test"    # Environment with in one sub_tenant or business unit
-terraform_version = "Terraform v0.14.9"
+terraform_version = "Terraform v1.0.1"
 #---------------------------------------------------------#
 # VPC and PRIVATE SUBNET DETAILS for EKS Cluster
 #---------------------------------------------------------#

@@ -16,13 +16,13 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-variable "image_repo_url" {}
-variable "image_repo_name" {
-  default = "k8s.gcr.io/metrics-server/metrics-server"
-}
-variable "metric_server_image_tag" {
-}
-variable "metric_server_helm_chart_version" {
-}
+variable "cluster_name" {}
+variable "vpc_cni_addon_version" {}
+variable "enable_vpc_cni_addon" {}
 
-variable "public_docker_repo" {}
+variable "enable_coredns_addon" {}
+variable "coredns_addon_version" {}
+
+variable "enable_kube_proxy_addon" {}
+variable "kube_proxy_addon_version" {}
+variable "tags" {}
