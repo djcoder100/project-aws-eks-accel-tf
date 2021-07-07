@@ -21,6 +21,8 @@ module "metrics_server" {
   source             = "./metrics_server"
   image_repo_url     = var.image_repo_url
   public_docker_repo = var.public_docker_repo
+  metric_server_helm_chart_version = var.metric_server_helm_chart_version
+  metric_server_image_tag = var.metric_server_image_tag
 }
 
 module "cluster_autoscaler" {
@@ -29,6 +31,8 @@ module "cluster_autoscaler" {
   image_repo_url     = var.image_repo_url
   eks_cluster_id     = var.eks_cluster_id
   public_docker_repo = var.public_docker_repo
+  cluster_autoscaler_image_tag = var.cluster_autoscaler_image_tag
+  cluster_autoscaler_helm_version = var.cluster_autoscaler_helm_version
 }
 
 module "lb_ingress_controller" {
@@ -39,6 +43,8 @@ module "lb_ingress_controller" {
   eks_oidc_issuer_url   = var.eks_oidc_issuer_url
   eks_oidc_provider_arn = var.eks_oidc_provider_arn
   public_docker_repo    = var.public_docker_repo
+  aws_lb_image_tag      = var.aws_lb_image_tag
+  aws_lb_helm_chart_version = var.aws_lb_helm_chart_version
 }
 
 module "traefik_ingress" {

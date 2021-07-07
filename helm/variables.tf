@@ -81,3 +81,19 @@ variable "agones_enable" {
 }
 
 variable "eks_security_group_id" {}
+
+variable "aws_lb_image_tag" {
+}
+variable "aws_lb_helm_chart_version" {
+}
+
+variable "metric_server_image_tag" {
+}
+variable "metric_server_helm_chart_version" {
+}
+
+variable "cluster_autoscaler_image_tag" {
+}
+
+variable "cluster_autoscaler_helm_version" {
+}
